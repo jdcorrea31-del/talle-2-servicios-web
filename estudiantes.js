@@ -11,11 +11,11 @@ const students = [
 
 ];
 
-function majornote80(students, limite) { 
+function majornote80(students, limite) { //creamos la funcion de nota mayor a 80
     return students
         .map(stu => stu.grade)          // Extraemos las notas .map recorre el array  y nos devuelve un array con los grados de los estudiantes
         .filter(nota => nota > limite); // Filtramos ese aray que nos dio .map con .filter y le damos la funcion de que la nota sea mayor al limite
-}                                      //creamos la funcion de nota mayor a 80
+}                                      
 
 console.log("estudiantes con nota mayor a 80:\n",majornote80(students, 80));
 
